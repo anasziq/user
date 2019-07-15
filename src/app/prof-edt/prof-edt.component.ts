@@ -6,8 +6,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./prof-edt.component.scss']
 })
 export class ProfEdtComponent implements OnInit {
+  public radioData: any;
   
   ngOnInit() {
+   
     
   }
   constructor() { }
@@ -19,14 +21,20 @@ export class ProfEdtComponent implements OnInit {
   @Output() emitEvent4 = new EventEmitter();
   @Output() emitEvent5 = new EventEmitter();
   @Output() emitEvent6 = new EventEmitter();
+  @Output() emitEvent7 = new EventEmitter();
   fname = '';
   lname = '';
   eml='';
   phone='';
   brth='';
+  
+  gend(event : any){
+    console.log("hello");
+  }
   onKey(event: any) { // without type info
     this.fname = event.target.value;
     this.emitEvent2.next(this.fname);
+    console.log(this.radioData);
   }
   onKey2(event: any) { // without type info
     this.lname = event.target.value;
