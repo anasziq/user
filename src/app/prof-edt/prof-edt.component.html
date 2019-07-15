@@ -1,0 +1,50 @@
+<div class="classAll">
+    <div class="w"> Insert Data </div>
+     
+    <div class="gr">
+        <div></div>
+        <div class="ws">First name:</div>
+        <div> <input class="d" type="text" (change)="onKey($event)" > </div>
+        <div></div>
+        <div class="ws">Last name:</div>
+        <div> <input class="d" type="text" (change)="onKey2($event)"> </div>
+        <div></div>
+    </div>
+    <div class="gr">
+        <div></div>
+        <div class="ws">E-mail:</div>
+        <div> <input class="d" type="text" (change)="onKey3($event)"> </div>
+        <div></div>
+        <div class="ws">Phone:</div>
+        <div> <input class="d" type="text" (change)="onKey4($event)"> </div>
+        <div></div>
+    </div>
+    <div class="gr">
+        <div></div>
+        <div class="ws">Date Of Birth:</div>
+        <div> <input class="d" type="date" (change)="onKey5($event)"> </div>
+        <div></div>
+        <div class="ws">Gender:</div>
+        <div class="gr3">
+            <div class="wss"> <input type="radio" name="gen"> Male</div>
+            <div></div>
+            <div class="wss"> <input type="radio" name="gen"> Female</div>
+        </div>
+        <div></div>
+    </div>
+
+    <div style="margin-left: 30px;">Profile image:</div>
+    <div class="grm">
+        <div class="mm">
+            <input type="button" id="loadFileXml" value="Choose your Profile image "
+                onclick="document.getElementById('file').click();" />
+            <input type="file" style="display:none;" id="file" name="file" (change)="onSelectFile($event)" />
+            
+        </div>
+        <div></div>
+        <div>
+                <img  src={{url}} id="dm" height="150px" width="150px"> 
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,49 @@
+body{
+    
+    margin: 0;
+    
+}
+.classAll{
+    border: 2px solid black;
+    padding: 15px;
+    height: 500px;
+}
+.w{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.gr{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30px 100px 150px 1fr 100px 150px 1fr;
+}
+.ws{
+    font-size: 15px;
+}
+.wss{
+    font-size: 13px;
+}
+.d{
+    width: 150px;
+}
+.fl{
+    display: flex;
+    width: 150px;
+}
+.gr3{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.cen{
+    align-items: center;
+}
+.mm{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.grm{
+    display: grid;
+    grid-template-columns: 200px 100px auto; 
+}

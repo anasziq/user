@@ -1,0 +1,33 @@
+body{
+    
+    margin: 0;
+    
+}
+.classAll{
+    border: 2px solid black;
+    padding: 15px;
+    height: 500px;
+}
+.w{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.gr{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    margin-bottom: 30px;
+}
+.grrow{
+    display: grid;
+    padding: 20px;
+    grid-template-rows: 5px 20px 5px 20px 5px 20px 5px 20px 5px 20px 5px 20px;
+}
+.grg{
+    display: grid;
+    grid-template-columns: 80px  100px 1fr;
+}
+.cr{
+    border-radius: 50%;
+}
